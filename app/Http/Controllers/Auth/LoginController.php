@@ -146,7 +146,7 @@ class LoginController extends Controller
         if($user){
             if (config('app.sync') && $request->auto_login == "true"){
                 return $this->loginDone($request, $user);
-            }else{  
+            }else{
                 return $this->sendOtpAndCheck($request, null);
             }
         }else{
@@ -174,19 +174,19 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-
         $user = null;
 
-        $check_user = User::where('email', $request->login)->where('is_active', 1)->whereHas('role', function($q){
+        $check_user = User::where('email', $request->email)->where('is_active', 1)->whereHas('role', function($q){
             return $q->where('type', 'customer')->orWhere('type','affiliate');
         })->first();
         if(!$check_user){
-            $check_user = User::where('email', $request->login)->where('is_active', 1)->whereHas('role', function($q){
+            $check_user = User::where('email', $request->email)->where('is_active', 1)->whereHas('role', function($q){
                 return $q->where('type', 'customer')->orWhere('type','affiliate');
             })->first();
         }
+
         if($check_user){
-            if (config('app.sync') && $request->auto_login == "true"){
+            if (config('app.sync')){// && $request->auto_login == "true"){
                 $user = $check_user;
             } else{
                 $this->validateLogin($request);
@@ -198,8 +198,8 @@ class LoginController extends Controller
                 "email" => __('auth.failed')
             ]);
         }
-        
-        
+
+
     }
 
     public function sendOtpAndCheck($request, $user){
@@ -363,21 +363,21 @@ class LoginController extends Controller
                         'lang_code' => app('general_setting')->language_code,
                         'currency_code' => app('general_setting')->currency_code,
                     ]);
-    
+
                     // User Notification Setting Create
                     (new UserNotificationSetting())->createForRegisterUser($newUser->id);
                     $this->adminNotificationUrl = '/customer/active-customer-list';
                     $this->routeCheck = 'cusotmer.list.get-data';
                     $this->typeId = EmailTemplateType::where('type', 'register_email_template')->first()->id; //register email templete typeid
                     $this->notificationSend("Register", $newUser->id);
-    
+
                     $profile = new Profile();
-    
+
                     $profile->profile_name = $user->name;
-    
+
                     $newUser->profile()->save($profile);
-    
-    
+
+
                     SocialProvider::create([
                         'user_id' => $newUser->id,
                         'provider_id' => $user->getId(),

@@ -33,6 +33,7 @@ class MaintenanceModeMiddleware
                 return new response(view(theme('pages.maintenance'), compact('maintain')));
             }
         }
+//        dd('aaaaaaaaaaaa');
         return $next($request);
     }
 }

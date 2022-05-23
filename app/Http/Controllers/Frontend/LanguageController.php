@@ -18,7 +18,7 @@ class LanguageController extends Controller
     }
     public function locale(Request $request)
     {
-
+//dd($request);
         if(auth()->check()){
             $userData = User::where('id', auth()->user()->id)->first();
             if(isset($request->currency)){

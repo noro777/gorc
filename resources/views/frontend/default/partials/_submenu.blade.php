@@ -1,3 +1,4 @@
+
 <div class="sub_menu {{$top_bar->status == 0 ? 'd-none':''}}" id="top_bar">
     <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -428,7 +429,7 @@
                                 @continue
                             @endif
                                 <li><a  href="{{ url(@$element->page->slug) }}">{{ ucfirst(\Illuminate\Support\Str::limit($element->title, 25, $end='...')) }}</a></li>
-                            
+
                         @elseif($element->type == 'category')
 
                         <li>

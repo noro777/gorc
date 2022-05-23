@@ -86,7 +86,7 @@ class RegisterController extends Controller
     {
 
         return Validator::make($data, [
-            'first_name' => ['required', 'string', 'max:255'],
+//            'first_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'max:255', 'unique:users,email', 'check_unique_phone'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'referral_code' => ['sometimes', 'nullable', Rule::exists('referral_codes', 'referral_code')->where('status', 1)]
@@ -105,7 +105,8 @@ class RegisterController extends Controller
     }
     public function create($data)
     {
-        
+
+
         $c_data = [];
         if($data->has('custom_field')){
             foreach (json_decode($data['custom_field']) as  $key => $f){
@@ -117,17 +118,19 @@ class RegisterController extends Controller
                 }
             }
         }
-        
-        $field = $data['email'];
-        if (is_numeric($field)) {
-            $phone = $data['email'];
-        } elseif (filter_var($field, FILTER_VALIDATE_EMAIL)) {
-            $email = $data['email'];
-        }
-        
+
+//        $field = $data['email'];
+//        if (is_numeric($field)) {
+//            $phone = $data['email'];
+//        } elseif (filter_var($field, FILTER_VALIDATE_EMAIL)) {
+//            $email = $data['email'];
+//        }
+        $email = $data['email'];
+        $phone = $data['phone'];
+
         $user =  User::create([
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
+            'first_name' => $data['first_name'] ?? null,
+            'last_name' => $data['last_name'] ?? null,
             'username' => isset($phone) ? $phone : NULL,
             'email' => isset($email) ? $email : NULL,
             'verify_code' => sha1(time()),
@@ -138,7 +141,7 @@ class RegisterController extends Controller
             'currency_id' => app('general_setting')->currency,
             'lang_code' => app('general_setting')->language_code,
             'currency_code' => app('general_setting')->currency_code,
-            'currency_code' => app('general_setting')->currency_code,
+//            'currency_code' => app('general_setting')->currency_code,
         ]);
 
         //affiliate user

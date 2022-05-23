@@ -5,7 +5,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
+
     <title>@if(trim($__env->yieldContent('title'))) @yield('title') | {{app('general_setting')->meta_site_title}} @else {{app('general_setting')->meta_site_title}} @endif</title>
     <meta name="_token" content="@php echo csrf_token(); @endphp" />
     @section('share_meta')
@@ -37,7 +37,7 @@
             width: 100%;
             font-weight: 300;
         }
-        
+
         .demo_addons {
             float: right;
             background: var(--base_color);
@@ -167,12 +167,11 @@
             .newsletter_form_wrapper .newsletter_form_inner .newsletter_form {
                 padding: 35px 10px;
                 margin-top: 30px;
-            } 
+            }
         }
 
 
     </style>
-
     @if(!isRtl())
     <style>
         @media (max-width: 575px) {

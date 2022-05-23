@@ -63,6 +63,7 @@ class WelcomeController extends Controller
             if ($previous_route != null) {
                 session()->forget('previous_user_id');
                 session()->forget('previous_user_last_route');
+
                 return redirect($previous_route);
             } else {
                 return view(theme('welcome'), compact('CategoryList', 'widgets'));
@@ -71,6 +72,8 @@ class WelcomeController extends Controller
             LogActivity::errorLog($e->getMessage());
             return $e->getMessage();
         }
+
+//        return 'aaaaaaaaaaa';
     }
 
     public function get_more_products(Request $request)

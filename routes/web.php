@@ -51,7 +51,7 @@ use Modules\SidebarManager\Entities\Sidebar;
 |
 */
 //for language switcher
-Route::post('/locale',[LanguageController::class,'locale'])->name('frontend.locale');
+Route::get('/locale',[LanguageController::class,'locale'])->name('frontend.locale');
 
 Auth::routes(['verify' => true]);
 Route::get('/admin/login', [LoginController::class, 'showAdminLoginForm'])->name('admin.login');
@@ -61,6 +61,11 @@ Route::get('/admin',function(){
 });
 
 Route::get('/',[WelcomeController::class,'index'])->name('frontend.welcome');
+
+//Route::get('/',function (){
+//    return 'bbbbbbbbbbbbbbb';
+//});
+
 Route::get('/get-more-products',[WelcomeController::class,'get_more_products'])->name('frontend.get_more_products');
 Route::post('/ajax-search-product',[WelcomeController::class,'ajax_search_for_product'])->name('frontend.ajax_search_for_product');
 Route::get('/search',[WelcomeController::class,'searchPage'])->name('frontend.searchPage');
@@ -76,6 +81,7 @@ Route::post('search',[SearchController::class,'search'])->name('routeSearch');
 
 //for category page
 Route::get('/category',[CategoryController::class,'index'])->name('frontend.category');
+
 Route::get('category/fetch_data', [CategoryController::class,'fetchPagenateData'])->name('frontend.category.fetch-data');
 Route::post('/category-filter-product',[CategoryController::class,'filterIndex'])->name('frontend.category_page_product_filter');
 Route::get('/category-filter-product-page',[CategoryController::class,'fetchFilterPagenateData'])->name('frontend.category_page_product_filter_page');
@@ -281,7 +287,7 @@ Route::post('/contact/store',[WelcomeController::class,'contactForm'])->name('co
      Route::post('/user-notification-read', [NotificationController::class,'read'])->name('user_notification_read');
  });
 
-    
+
 
  //for summernote image upload
  Route::post('summer-note-file-upload', [UploadFileController::class, 'upload_image'])->name('summerNoteFileUpload');
