@@ -83,7 +83,6 @@
 
 
 @include('frontend.default.partials._header',[$popupContent,$compares])
-
     @section('content')
         @show
     <!-- jquery plugin here -->

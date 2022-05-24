@@ -62,7 +62,7 @@
               {{ @$product->skus->first()->selling_price }}
             @endif
           @endif
-          ">
+          "> 
     <div class="col-lg-4 col-sm-6 col-md-6 single_product_item">
         <div class="single_product_list product_tricker">
           <div class="product_img">

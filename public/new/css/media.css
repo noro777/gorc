@@ -1,0 +1,745 @@
+@media only screen and (max-width: 1440px){
+    .f_padds{
+        flex-wrap: wrap;
+    }
+    .our_mail, .card_col {
+        column-gap: 10px;
+    }
+    .foot_bar {
+        column-gap: 36px;
+    }
+    .slide_section{
+        height: 450px;
+    }
+
+}
+@media only screen and (max-width: 1280px){
+    .f_padds{
+        padding: 0;
+    }
+    .menu_search{
+        max-width: 668px;
+    }
+    .slide_section{
+        height: 412px;
+    }
+    .for_comment{
+        column-gap: 42px;
+    }
+    .add_comment_area textarea{
+        font-size: 16px;
+    }
+    .rev_num{
+        font-size: 45px;
+    }
+    .rev_last{
+        font-size: 18px;
+    }
+    .lines_n{
+        width: 212px;
+    }
+    .prod_mini_{
+        width: 145px;
+        height: 145px;
+    }
+    .general_prod_img {
+        width: 465px;
+        height: 465px;
+    }
+    .about_prod_model{
+        height: 624px;
+    }
+    .model_id span {
+        font-size: 18px;
+    }
+    .prod_name {
+        font-size: 38px;
+        margin-top: 20px;
+    }
+    .this_moment_price {
+        font-size: 26px;
+    }
+    .sale_for{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .for_description{
+        max-width: 972px;
+    }
+    .add_comment_area{
+        column-gap: 24px;
+    }
+    .comments_about{
+        row-gap: 5px;
+    }
+    .my_profile_section{
+        column-gap: 30px;
+    } 
+    .profile_menu, .for_my_purchases, .for_my_comments,
+    .for_my_favorites, .for_settings{
+        row-gap: 10px;
+    }
+    .for_edit_profile h1, .for_my_purchases h2, .for_my_comments h3, 
+    .for_my_favorites h4, .for_settings h5{
+        font-size: 34px;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .foot_bar {
+        width: 100%;
+    }
+    .f_logo_soc{
+        row-gap: 22px;  
+    }
+    .offered_lang a, .eng_am_rus{
+        font-size: 16px;
+    }
+    .lang_drpdn{
+        max-width: 56px;
+    }
+    .dropdwn_choose{
+        bottom: -66px;
+    }
+    .offered_lang{
+        padding: 5px 16px;
+    }
+    .subscribe_block{
+        max-width: 782px;
+    }
+    .red_o{
+        top: -5px;
+        right: -7px;
+        font-size: 8px;
+        width: 15px;
+        height: 15px;
+    }
+    .head_icons  svg{
+        width: 25px;
+        height: 25px;
+    }
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
+    .slide_section {
+        height: 345px;
+    }
+    .gray_slider .slick-track{
+        column-gap: 20px;
+    }
+    .subscribe_section{
+        margin-top: 46px;
+        margin-bottom: 90px;
+    }
+    .product_section{
+        flex-direction: column;
+        row-gap: 30px;
+    }   
+    .about_prod_model{
+        max-width: 668px;
+        height: 530px;
+    }
+    .prod_mini_ {
+        width: 150px;
+        height: 150px;
+    }
+    .general_prod_img {
+        width: 495px;
+        height: 490px;
+    }
+    .prod_slide_section, .right_mini_imgs {
+        column-gap: 21px;
+    }
+    .for_prod_slider, .general_and_mini{
+        row-gap: 21px;
+    }
+    .model_id span {
+        font-size: 20px;
+    }
+    .prod_name {
+        font-size: 45px;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+    .this_moment_price {
+        font-size: 30px;
+    }
+    .sale_for {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .publ_margns {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .about_prod_model .add_catalog_btn{
+        margin-bottom: 20px;
+        min-height: 44px;
+        font-size: 28px;
+        border-radius: 5px;
+    }
+    .about_prod_model .add_catalog_btn svg{
+        width: 20px;
+        height: 18px;
+    }
+    .soc_prod{
+        margin-top: 20px; 
+    }
+    .for_comment{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .lines_n{
+        width: 266px;
+    }
+    .description, .comments{
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+    .catalog_section{
+        column-gap: 20px;
+    }
+    .name_message, .message_users_block{
+        max-width: none;
+    }
+    .message_block_{
+        display: none;
+    }
+    .my_profile_section{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .prof_menu_sp{
+        width: max-content;
+        font-size: 18px;
+        min-width: 125px;
+        padding-bottom: 14px;
+    }
+    .profile_menu{
+        max-width: none;
+        flex-direction: row;
+        column-gap: 28px;
+        width: 100%;
+        overflow: auto;
+    }
+    .for_edit_profile h1, .for_my_purchases h2, .for_my_comments h3, 
+    .for_my_favorites h4, .for_settings h5{
+        display: none;
+    }
+    .edit_prof_section{
+        padding: 30px 20px;
+        row-gap: 22px;
+    }
+    .prof_img_name{
+        margin: 0;
+    }
+    .inp_cols{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .for_descrip {
+        max-width: 150px;
+    }
+    .purch_block span{
+        font-size: 13px;
+    }
+    .descrip_text{
+        height: 55px;
+    }
+    .puchas_sp{
+        padding-top: 20px;
+    }
+    .loc_delete {
+        column-gap: 26px;
+    }
+    .comment_block {
+        column-gap: 28px;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .wrapper{
+        max-width: 708px;
+    }
+    header{
+        height: 248px;
+    }
+    .space_betw{
+        position: relative;
+    }
+    .menu_search{
+        position: absolute;
+        bottom: -70px;
+    }
+    .catalog_cl{
+        margin-right: 175px;
+    }
+    .space_betw {
+        column-gap: normal
+    }
+    .catalog_dropd{
+        z-index: 10;
+        top: 60px;
+    }
+    .slide_section {
+        height: 226px;
+    }
+    main {
+        padding-top: 248px;
+    }
+    .new_models_section{
+        margin-top: 40px;
+        row-gap: 10px;
+    }
+    .second_title {
+        font-size: 30px;
+    }
+    .model_product{
+        max-width: 208px;
+    }
+    .add_to_fav svg{
+        width: 22px;
+        height: 20px;
+    }
+    .about_model {
+        padding: 16px 14px 20px 14px;
+        row-gap: 16px;
+    }
+    .model_name, .price_of_prod {
+        font-size: 18px;
+    }
+    .data_of_model {
+        font-size: 12px;
+    }
+    .eye_cool {
+        column-gap: 12px;
+    }
+    .add_mail_section{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+    .subscribe_block {
+        max-width: 608px;
+        row-gap: 20px;
+    }
+    .subscribe_block h1{
+        max-width: 220px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .under_title{
+        margin: 0;
+        max-width: 216px;
+    }
+    .subs_btn{
+        min-height: 58px;
+    }
+    .subscribe_section{
+        padding: 40px 0 56px 0;
+    }
+    .f_a_bar{
+        font-size: 18px;
+    }
+    .foot_bar {
+        column-gap: normal;
+    }
+    .our_mail, .card_col {
+        column-gap: 20px;
+    }
+    .prod_slide_section, .right_mini_imgs{
+        column-gap: normal;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .prod_slide_section {
+        flex-direction: column;
+        row-gap: 21px;
+    }
+    .for_prod_slider {
+        flex-direction: row;
+        column-gap: 21px;
+    }
+    .for_prod_slider .prod_mini_:nth-child(1){
+        display: none;
+    }
+    .catalog_section{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .all_category{
+        max-width: none;
+    }
+    .pagination_sp{
+        font-size: 16px;
+    }
+    .pagination_block {
+        column-gap: 12px;
+    }
+    .fl_end{
+        row-gap: 20px;
+    }
+    .cart_checkout {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .goto_checkout_block{
+        max-width: none;
+        row-gap: 20px;
+    }
+    .goto_checkout_block .promo_code {
+        max-width: 516px;
+    }
+    .shopping_section{
+        margin-bottom: 90px;
+        margin-top: 20px;
+    }
+    .title_num h1{
+        font-size: 30px;
+    }
+    .title_num{
+        column-gap: 14px;
+    }
+    .sales_remove {
+        column-gap: 60px;
+    }
+    .remove_shop_cart svg{
+        width: 15px;
+        height: 15px;
+    }
+    .price_prod{
+        column-gap: 8px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .menu_catalog{
+        min-width: 40px;
+        width: 40px;
+        min-height: 40px;
+        height: 40px;
+        padding: 14px 12px;
+        font-size: 0;
+        column-gap: normal;
+    }
+    .catalog_cl{
+        margin-right: 144px;
+    }
+    .description, .comments{
+        width: 167px;
+    }
+    .nums_start{
+        column-gap: normal;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .rating_block{
+        width: 100%;
+    }
+   
+ 
+}
+@media only screen and (max-width: 414px){
+    .slide_section {
+        height: 132px;
+    }
+    .head_soc{
+        display: none;
+    }
+    .head_social_lang{
+        border: none;
+    }
+    .catalog_cl{
+        margin: 0;
+    }
+    .offered_lang a, .eng_am_rus {
+        font-size: 14px;
+    }
+    .lang_drpdn {
+        max-width: 52px;
+    }
+    header {
+        height: 230px;
+    }
+    main {
+        padding-top: 230px;
+    }
+    .second_title {
+        font-size: 26px;
+    }
+    .view_all{
+        font-size: 18px;
+    }
+    .model_product {
+        max-width: 158px;
+    }
+    .model_name, .price_of_prod {
+        font-size: 16px;
+    }
+    .subscribe_block{
+        max-width: 295px;
+    }
+    .add_mail_section{
+        row-gap: 20px;
+    }
+    .subscribe_section{
+        padding: 30px 0;
+        margin-top: 18px;
+    }
+    .foot_bar{
+        flex-wrap: wrap;
+        justify-content: start;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .f_a_bar {
+        font-size: 14px;
+    }
+    .login_block, .reset_password_popup, .register_block,
+    .successfull_popup, .new_password_block{
+        max-width: 335px;
+    }
+    .successfull_popup{
+        padding: 73px 22px 22px 22px;
+    }
+    .scs_p{
+        font-size: 11px;
+    }
+    .slick-dots{
+        display: none !important;
+    }
+    .add_comment_area textarea {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+    .comments_about {
+        row-gap: 12px;
+    }
+    .com_date{
+        margin: 0;
+        font-size: 12px;
+    }
+    .twenty_sp {
+        font-size: 16px;
+    }
+    .added_comms{
+        border: none;
+        column-gap: 16px;
+        padding: 0;
+    }
+    .also_like{
+        margin-bottom: 70px;
+    }
+    .model_id span {
+        font-size: 18px;
+    }
+    .about_prod_model{
+        padding: 28px 20px 0 20px;
+        height: 500px;
+    }
+    .about_prod_model .d_flex:nth-child(1){
+        flex-direction: column;
+        row-gap: 16px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .watched_ , .publ_sms{
+        flex-direction: row !important;
+    }
+    .prod_name{
+        font-size: 30px;
+        margin-top: 14px;
+    }
+    .start_block{
+        margin-bottom: 16px;
+    }
+    .publ_margns{
+        margin-bottom: 20px;
+    }
+    .soc_prod {
+        margin-top: 16px;
+    }
+    .for_prod_slider{
+        column-gap: normal;
+        justify-content: space-between;
+        max-width: 335px;
+        width: 100%;
+    }
+    .general_prod_img {
+        width: 335px;
+        height: 335px;
+    }
+    .prod_slide_section, .general_and_mini{
+        row-gap: 10px;
+    }
+    .prod_mini_ {
+        width: 108px;
+        height: 100px;
+    }
+    .categories_block{
+        column-gap: 10px;
+        row-gap: 12px;
+    }
+    .name_message{
+        width: 70%;
+    }
+    .sms_block{
+        padding: 20px 22px 20px 24px;
+    }
+    .text_here_block{
+        padding: 0 20px;
+        column-gap: 10px;
+    }
+    .send_sms svg{
+        width: 24px;
+        height: 28px;
+    }
+    .edit_prof_img{
+        min-width: 112px;
+    }
+    .prof_img_name{
+        column-gap: 8px;
+    }
+    .edit_prof_pic, .edit_prof_pic input{
+        max-width: 174px;
+    }
+    .edit_prof_pic{
+        font-size: 14px;
+    }
+    .edit_prof_pic svg{
+        width: 19px;
+        height: 18px;
+    }
+    .comented_{
+        font-size: 12px;
+    }
+    .rows_ {
+        row-gap: 8px;
+    }
+    .prod_name_{
+        font-size: 13px;
+    }
+    .loc_delete {
+        column-gap: 12px;
+    }
+    .clock_ span{
+        font-size: 8px;
+    }
+    .remove_comment svg{
+        width: 14px;
+        height: 14px;
+    }
+    .img_and_com{
+        column-gap: 10px;
+    }
+    .com_text{
+        font-size: 16px;
+    }
+    .comment_block {
+        column-gap: 0px;
+    }
+    .purchases_section{
+        overflow: auto;
+    }
+    .purchases_block_{
+        width: 668px;
+    }
+    .img_name_prod {
+        column-gap: 10px;
+    }
+    .shop_cart_prod{
+        padding: 22px 20px 22px 20px;
+        flex-wrap: wrap;
+    }
+    .sales_remove {
+        column-gap: 20px;
+    }
+    .sales_remove .sale_for{
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+    .sales_remove .prev_price {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .subscribe_block {
+        max-width: 236px;
+    }
+    .login_block, .reset_password_popup, .register_block, 
+    .successfull_popup, .new_password_block {
+        max-width: 300px;
+    }
+    .scs_p{
+        text-align: center;
+    }
+    .f_padds{
+        justify-content: center;
+    }
+    .foot_bar{
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .pagination_block {
+        column-gap: 8px;
+    }
+    .categories_block{
+        justify-content: center;
+    }
+    .name_us_onof{
+        font-size: 14px;
+    }
+    .name_from_{
+        font-size: 15px;
+    }
+    .under_name_mess{
+        font-size: 12px;
+    }
+    .messages_from_user{
+        padding: 14px 14px 14px 9px;
+    }
+    .editmail{
+        font-size: 14px;
+    }
+    .edit_prof_pic, .edit_prof_pic input {
+        max-width: 122px;
+    }
+    .edit_prof_pic {
+        font-size: 8px;
+    }
+    .com_text{
+        font-size: 10px;
+        height: 16px;
+    }
+    .loc_delete{
+        align-self: end;
+    }
+    .comment_block{
+        flex-direction: column-reverse;
+    }
+    .comented_{
+        font-size: 14px;
+    }
+    .change_notifs{
+        padding: 26px 30px 26px 26px;
+    }
+    .change_notifs span {
+        font-size: 14px;
+    }
+    .for_settings{
+        margin-bottom: 178px;
+    }
+    .edit_prof_img{
+        width: 100px;
+        min-width: 100px;
+        height: 100px;   
+    }
+    .shop_cart_prod{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .sales_remove{
+        align-self: flex-end;
+    }
+}

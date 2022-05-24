@@ -7,7 +7,7 @@ use Modules\Product\Entities\CategoryImage;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Product\Imports\CategoryImport;
 use Modules\Product\Export\CategoryExport;
-
+ 
 class CategoryRepository
 {
     use ImageStore;

@@ -55,9 +55,9 @@ class CategoryController extends Controller
         $data['max_price_highest'] = $product_max_price;
 
 
-        return view(theme('pages.category'), $data);
+        return view(theme('new.category'), $data);
     }
-
+ 
     public function fetchPagenateData(Request $request)
     {
         $sort_by = null;
@@ -233,7 +233,7 @@ class CategoryController extends Controller
                 $data['brandList'] = $this->filterService->filterBrandCategoryWise($category_id, $category_ids);
 
                 $data['products'] = $this->filterService->filterProductCategoryWise($category_id, $category_ids, $sort_by, $paginate);
-                
+
                 $product_min_price = $this->filterService->filterProductMinPrice($data['products']->pluck('id'));
                 $product_max_price = $this->filterService->filterProductMaxPrice($data['products']->pluck('id'));
                 $product_min_price = $this->filterService->getConvertedMin($product_min_price);
@@ -302,7 +302,7 @@ class CategoryController extends Controller
             $product_min_price = $this->filterService->getConvertedMin($product_min_price);
             $product_max_price = $this->filterService->getConvertedMax($product_max_price);
 
-            
+
 
             $data['min_price_lowest'] = $product_min_price;
             $data['max_price_highest'] = $product_max_price;
@@ -345,7 +345,7 @@ class CategoryController extends Controller
             $min_price = $this->filterService->getConvertedMin(min($product_min_price,$giftcard_min_price));
             $max_price = $this->filterService->getConvertedMax(max($product_max_price,$giftcard_max_price));
 
-            
+
 
             $data['min_price_lowest'] = $min_price;
             $data['max_price_highest'] = $max_price;

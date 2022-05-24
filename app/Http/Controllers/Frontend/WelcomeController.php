@@ -65,7 +65,7 @@ class WelcomeController extends Controller
                 session()->forget('previous_user_last_route');
                 return redirect($previous_route);
             } else {
-                return view(theme('welcome'), compact('CategoryList', 'widgets'));
+                return view(theme('new.index'), compact('CategoryList', 'widgets'));
             }
         } catch (Exception $e) {
             LogActivity::errorLog($e->getMessage());

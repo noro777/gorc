@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
     {
         if (!Collection::hasMacro('paginate')) {
 
-            Collection::macro('paginate', 
+            Collection::macro('paginate',
                 function ($perPage = 15, $page = null, $options = []) {
                 $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
                 return (new LengthAwarePaginator(
@@ -42,9 +42,9 @@ class AppServiceProvider extends ServiceProvider
             });
         }
 
-        if (config('app.force_https')) {
-            URL::forceScheme('https');
-        }
+//        if (config('app.force_https')) {
+//            URL::forceScheme('https');
+//        }
 
 
         Schema::defaultStringLength(191);

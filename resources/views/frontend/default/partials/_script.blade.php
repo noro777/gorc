@@ -1,5 +1,4 @@
 <script src="{{ asset(asset_path('frontend/default/compile_js/app.js')) }}"></script>
-
 <script>
 
     window._locale = '{{ app()->getLocale() }}';
@@ -288,7 +287,7 @@
                                     <strong id='clear_search'>Clear</strong>
                                     </div>
                                 <div class="tags_list d-flex flex-column seach_list_padding search_history_list">
-                                    
+
                                 </div>
                             `);
                             var count_limit = 1;
@@ -510,7 +509,7 @@
 
                         }
                     }
-                    
+
 
                     if(response.tags.length < 1 && response.products.length < 1 && response.categories.length < 1){
                         $('.search_item').html('');
@@ -580,7 +579,7 @@
                     }
                     // $('.notification_count').text(parseInt(notification_count) - 1);
                 });
-                
+
             });
 
         });
